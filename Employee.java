@@ -1,11 +1,11 @@
-public class Employee {
+public abstract class Employee {
     private String name;
     private int skill;
     private double salary;
 
     public Employee(String name, int skill, double salary) {
         this.name = name;
-        setSkill(skill);      
+        setSkill(skill);
         this.salary = salary;
     }
 
@@ -31,7 +31,6 @@ public class Employee {
         }
     }
 
-    public int work() {
-        return skill;
-    }
+    // D4: abstract method
+    public abstract int work();
 }
